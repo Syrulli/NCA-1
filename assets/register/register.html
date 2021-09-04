@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../Libraries/css/style.css">
+        <link rel="stylesheet" href="../../Libraries/inc/bootstrap-4.6.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../Libraries/inc/fontawesome-5.15.4/css/all.min.css">
+        <title>NCA Register</title>
+
+    </head>
+    
+    <body>
+
+    <div class="load-screen ">
+
+        <img src="../../Libraries/img/logo.png" alt="" class="m-auto" >
+
+        <div></div>
+        
+        <label class="font-weight-bold text-center" style="font-family: 'Roboto Condensed', sans-serif;">NCA 2021</label>
+
+    </div>
+
+    <div class="content d-none">
+
+        <div class="body_design" >
+
+            <div class="card mx-auto form_container_design ld_adjust">
+
+                <div class="container-fluid">
+
+                    <div class="row">
+
+                        <div class="col text-center">
+
+                            <img class="logo" src="../../Libraries/img/logo.png" style="height: 120px; width: 160px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row ">
+
+                        <div class="col mt-2 text-center"><p class="display-fail text-danger"></p></div>
+
+                    </div>
+
+                    <form autocomplete="off" >
+
+                        <div class="row">
+
+                            <div class="col">
+
+                                <div>
+                                    <label class="my-0 label-style" id="lbl_email"><i class="fas fa-user pr-2 pb-2 fs-10" ></i>Email</label>
+                                    <input type="text" class="form-control py-0 input-style" aria-label="#lbl_email" >
+
+                                    <div class="text-right small-style mb-0 pb-0">
+                                        <small> ( Must be a valid Email this will be your Username )</small>
+                                    </div>
+
+                                    <div class="text-right small-style mb-0 pb-0 d-none text-danger" id="fb_email"><small></small></div>
+                                </div>
+
+                                <div class="mt-2"> 
+                                    <label class="my-0 label-style" id="lbl_mobileno"><i class="fas fa-user pr-2 pb-2 fs-10" ></i>Mobile No</label>
+                                    <input type="text" class="  input-style form-control py-0" aria-label="#lbl_mobileno">
+
+                                    <div class="text-right small-style mb-0 pb-0">
+                                        <small> ( Must be a valid Mobile No )</small>
+                                    </div>
+                                </div>
+
+                                <div class="mt-2">
+                                    <label class="my-0 label-style"><i class="fas fa-user pr-2 pb-2 fs-10" ></i>Nickname</label>
+                                    <input type="text" class="form-control py-0 input-style" >
+                                    
+                                </div>
+
+                                <div class="mt-2">
+                                    <label class="my-0 label-style"><i class="fas fa-user pr-2 pb-2 fs-10" ></i>Last Name</label>
+                                    <input type="text" class="form-control py-0 input-style" >
+                                </div>
+
+                                <div class="mt-2">
+                                    <label class="my-0 label-style"><i class="fas fa-user pr-2 pb-2 fs-10" ></i>First Name</label>
+                                    <input type="text" class="form-control py-0 input-style" >
+                                </div>
+
+                                <div class="mt-2">
+                                    <label class="my-0 label-style"><i class="fas fa-user pr-2 pb-2 fs-10" ></i>Middle Name</label>
+                                    <input type="text" class="form-control py-0 input-style" >
+                                </div>
+
+                                <div class="mt-2">
+                                    <label class="my-0 label-style"><i class="fas fa-user pr-2 pb-2 fs-10" ></i>Nationality</label>
+                                   <select class="form-control input-style" id=""></select>
+                                </div>
+
+                                <div class="mt-2">
+                                    <label class="my-0 label-style"><i class="fas fa-user pr-2 pb-2 fs-10" ></i>Birth Date</label>
+                                    <input type="date" class="form-control py-0 input-style" >
+                                </div>
+
+
+                                
+
+                                
+                                <div class="main-color text-center">
+
+                                    <div class="mt-5 mt-lg-4 pt-4 pb-0 mb-0">
+
+                                        <button type="submit" class="login p-1 mb-0" id="btn_login" style="font-size: 11pt">Sign Up</button>
+
+                                        <small style="color: #65657B;">By clicking Sign Up you agreed to</small> <br>
+                                        
+                                        <a id="btn_terms" class="text-danger"><u><small>TERMS & CONDITIONS</small></u></a> 
+
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+        
+            </div>
+
+        </div>
+
+        <div class="footer_design " style="background: red !important; color: white !important;" >
+            
+            <footer class="">
+
+                <div class="py-0 vw-100 " style="border-top: 1px solid whitesmoke;"></div>
+
+                <marquee behavior="" direction=""> <p class="text-center text-white py-1">&copy; 2021 All Rights Reserved by Newin Cockers Alliance Corporation</p></marquee>
+        
+            </footer>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" id="modal_output">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-body text-center pt-5 pb-3">
+
+                    <p class="my-0" style="font-size: 15pt;"></p>
+
+                    <small></small>
+
+                    <br>
+                    <br>
+
+                    <i class=" my-0 py-0"></i>
+
+                </div>
+
+                <div class="modal-footer text-center">
+
+                    <a href="" class="btn btn-primary" id="btn_modal"></a>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+        
+        
+      
+
+
+
+      
+
+        <script src="../../libraries/inc/jquery/jquery-3.4.1.min.js"></script>
+        <script src="../../libraries/inc/bootstrap-4.6.0/js/bootstrap.min.js"></script>
+        <script src="../../libraries/js/register/function.js"></script>
+        <script src="../../libraries/js/register/design.js"></script>
+
+    </body>
+
+</html>

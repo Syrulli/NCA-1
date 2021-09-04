@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../libraries/css/style.css">
+        <link rel="stylesheet" href="../../libraries/inc/bootstrap-4.6.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../libraries/inc/fontawesome-5.15.4/css/all.min.css">
+
+        <title>NCA Login</title>
+    </head>
+    
+    <body>
+
+        <div class="load-screen d-none">
+
+            <img src="../../libraries/img/logo.png" alt="" class="m-auto" >
+
+            <div></div>
+
+            <label class="font-weight-bold text-center" style="font-family: 'Roboto Condensed', sans-serif;">NCA 2021</label>
+
+        </div>
+
+        <div class="content">
+
+            <div class="body_design">
+
+                <div class="card mx-auto form_container_design ">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col text-center">
+
+                                <img class="logo" src="../../libraries/img/logo.png" style="height: 120px; width: 160px;">
+
+                            </div>
+
+                        </div>
+
+                        <form>
+
+                            <div class="row ">
+
+                                <div class="col mt-3 text-center"><p class="display-fail text-danger"></p></div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col text-center">
+
+                                    <div class="input-container mt-2">
+                                    
+                                        <input type="text" name="nickname" id="txt_username" maxlength="64" class="input_box" placeholder=" " required>
+
+                                        <div class="cut"></div>
+
+                                        <label for="username" class="placeholder"><i class="fas fa-user pr-2" ></i>Username</label>
+                                  
+                                        <div class="text-right pl-1 d-none" id="fb_username"><small class="text-danger"></small></div>
+
+                                    </div>
+
+                                    <div class="input-container mt-3" id="container_password">
+                                    
+                                        <input type="text" name="password" id="txt_password" maxlength="32" class="input_box" placeholder=" " required>
+
+                                        <div class="cut"></div>
+
+                                        <label for="username" class="placeholder"><i class="fas fa-key pr-2"></i>Password</label>
+
+                                    </div>
+
+                                    <div class="main-color">
+
+                                        <div class="mt-2 text-right">
+
+                                            <a href="#" class=" pl-1 ld-main-text-color" style="font-size:10pt;">Forgot Password?</a>
+
+                                        </div>
+
+                                        <div class="mt-4 py-2">
+
+                                            <button type="submit" class="login p-1" id="btn_login" style="font-size: 11pt">Log in</button>
+                                        
+                                        </div>
+
+                                        <div class="text-center">
+
+                                            <a href="../register/register.html" style="font-size: 10pt" class="ld-main-text-color">No account? Register now!</a>
+
+                                        </div>
+
+                                    
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+            
+                </div>
+
+            </div>
+
+            <div class="footer_design " style="background: red !important; color: white!important;">
+                
+                <footer class="">
+
+                    <div class="py-0 vw-100 mb-3" style="border-top: 1px solid whitesmoke;"></div>
+
+                    <marquee behavior="" direction=""> <p class="text-center text-white">&copy; 2021 All Rights Reserved by Newin Cockers Alliance Corporation</p></marquee>
+            
+                </footer>
+
+            </div>
+
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" id="modal_output">
+                
+                <div class="modal-dialog">
+                
+                    <div class="modal-content">
+                
+                        <div class="modal-body text-center py-5">
+                
+                            <p style="font-size: 15pt;"></p>
+                
+                            <i class="far fa-check-circle fa-2x" style="color: green;"></i>
+                
+                        </div>
+                
+                        <div class="modal-footer text-center">
+                
+                            <a  class="btn btn-primary" id="a_goToDashboard">Go to Dashboard</a>
+                
+                        </div>
+                
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+      
+
+        <script src="../../libraries/inc/jquery/jquery-3.4.1.min.js"></script>
+        <script src="../../libraries/inc/bootstrap-4.6.0/js/bootstrap.min.js"></script>
+        <script src="../../libraries/js/login/function.js"></script>
+    </body>
+</html>

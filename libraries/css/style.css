@@ -1,0 +1,368 @@
+:root {
+    --main-text-color: whitesmoke !important;
+    --bg-main-color: #21252B !important;
+    --bg-secondary-color: #282C34 !important;
+}
+
+.ld-main-text-color{
+    color: var(--main-text-color);
+}
+
+.mt-2rem{
+    margin-top: 2rem !important;
+}
+
+.content{
+    background-color: #282C34 !important;
+}
+
+.fs-9{
+    font-size: 9pt !important;
+}
+.fs-10{
+    font-size: 11pt !important;
+}
+
+.input-style{
+    border: 1px solid #27282e !important;
+    background: #21252B !important;
+    border-radius: 8px !important;
+    outline: 0px !important;
+    /* -webkit-appearance:none; */
+    box-shadow: none !important;
+}
+.input-style:focus{
+    border: 1px solid rgb(240, 65, 65) !important;
+    outline: none !important;
+}
+.label-style{
+    color: #65657B ;
+    padding-left: 8px !important;
+}
+.small-style{
+    color: #65657B !important;
+    padding-left: 8px !important;
+}
+
+@media all and (min-width: 375px) {
+
+    .form_container_design
+    {
+        background-color: #282C34 !important;
+        padding: 1rem !important;
+        border-radius: 10px !important;
+        color: whitesmoke;
+        max-height: 95% !important;
+        width: 400px !important;
+        overflow-y: auto;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .body_design{
+        background: #21252B !important;
+        align-items: center !important; 
+        display: flex !important;
+        justify-content: center !important;
+        height: 90vh !important;
+    }
+    
+    .footer_design{
+        background: #21252B !important;
+        align-items: center !important; 
+        display: flex !important;
+        justify-content: center !important;
+        height: 10vh !important;
+    }
+    
+}
+
+@media all and (max-width: 375px) {
+
+    .form_container_design
+    {
+        background-color: #282C34 !important;
+        padding: 1rem !important;
+        border-radius: 10px !important;
+        color: whitesmoke;
+        max-height: 85% !important;
+        width: 85% !important;
+        overflow-y: auto;
+    }
+    
+    .body_design{
+        background: #21252B !important;
+        align-items: center !important; 
+        display: flex !important;
+        justify-content: center !important;
+        height: 90vh !important;
+    }
+
+    .footer_design{
+        background: #21252B !important;
+        align-items: center !important; 
+        display: flex !important;
+        justify-content: center !important;
+        height: 10vh !important;
+    }
+
+}
+
+.form_container_design
+{
+    background-color: #282C34 !important;
+    padding: 2rem;
+    border-radius: 10px !important;
+    color: whitesmoke;
+}
+
+.input-container{
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.input_box{
+    background-color: #21252B;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.cut{
+    background-color: 15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transition: transform 200ms;
+    width: 76px;
+}
+
+.placeholder{
+    color: #65657b;
+    font-family:  sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input_box:focus ~ .cut,
+.input_box:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+
+.input_box:focus ~ .placeholder,
+.input_box:not(:placeholder-shown) ~ .placeholder{
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input_box:not(:placeholder-shown) ~ .placeholder{
+    color: #808097;
+}
+
+.input_box:focus ~ .placeholder{
+    color: #d63131;
+}
+
+
+
+/* LOG IN BUTTON */
+
+.login{
+    border: none;
+    height: 5% !important;
+    width: 200px;
+    font-family: "montserrat",sans-serif;
+    border-radius: 200px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 200%;
+    transition: 0.6s;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;  
+}
+
+.login{
+    background-image: linear-gradient(to left,red,#d87e83,red);
+}
+
+.login:hover{
+    background-position: right;
+}
+
+/* LOG IN BUTTON */
+
+
+/* TERMS & CONDITIONS CSS */
+
+.container_termsConditions{
+    width: 50%;
+}
+
+.form_termsConditions{   
+    color: whitesmoke;
+    width: 100%;
+    max-height: 500px !important;
+    overflow: auto;
+}
+
+
+/* TERMS & CONDITIONS CSS */
+
+
+
+/* SPINNER */
+
+.load-screen{
+
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+
+}
+.load-screen>img{
+
+    height: 80px;
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border-radius: 50%;
+}
+.load-screen>label{
+
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    margin:auto;
+    padding-top:80px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.load-screen>div{
+
+    height: 170px;
+    width: 170px;
+    border: 4px solid rgb(158, 157, 157);
+    border-top-color: rgb(243, 160, 71);
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+/* CRYSTALS DESIGN */
+.crystal_red{
+    width: 35px;
+    height: 35px;
+    background-size: 40%;
+    transition: 0.6s;
+    clip-path: polygon(58% 19%, 83% 29%, 91% 45%, 40% 85%, 15% 24%, 31% 16%);
+    background-image: linear-gradient(to bottom right,rgb(213, 14, 0),#e90e0e6d,rgba(255, 0, 0, 0.891));
+    animation: red 1.3s infinite linear;
+    
+}
+
+.crystal_green{
+    width: 35px;
+    height: 35px;
+    background-size: 40%;
+    transition: 0.6s;
+    margin-left: auto;
+    margin-right: auto;
+    clip-path: polygon(58% 19%, 83% 29%, 91% 45%, 40% 85%, 15% 24%, 31% 16%);
+    background-image: linear-gradient(to bottom right,rgb(18, 213, 0),#09f04aa8,rgba(21, 255, 0, 0.891));
+    animation: green  1.3s infinite linear;
+   
+}
+        
+.crystal_blue{
+    width: 35px;
+    height: 35px;   
+    background-size: 40%;
+    transition: 0.6s;   
+    clip-path: polygon(58% 19%, 83% 29%, 91% 45%, 40% 85%, 15% 24%, 31% 16%);
+    background-image: linear-gradient(to bottom right,rgb(11, 0, 213),#0e65e880,rgba(4, 0, 255, 0.891));
+    animation: blue 1.3s infinite linear;
+
+}
+
+.crystal_pink{
+    width: 35px;
+    height: 35px;
+    background-size:40%;
+    transition: 0.6s;
+    margin-left: auto;
+    margin-right: auto;
+    clip-path: polygon(58% 19%, 83% 29%, 91% 45%, 40% 85%, 15% 24%, 31% 16%);
+    background-image: linear-gradient(to bottom right,rgb(223, 4, 223),#fa06de52,rgba(255, 0, 212, 0.891));
+    animation: pink 1.3s infinite linear;
+}
+
+/* KAYFRAMES EFFECTS for Crystals */
+
+@keyframes red {
+    50%{
+      background-position:right;
+      background-image: linear-gradient(to bottom right,rgb(209, 4, 4),#f7080883,rgba(223, 0, 0, 0.693));
+      transform: rotate(20deg);
+    }
+}
+
+@keyframes green {
+    50%{
+
+      background-position:right;
+      background-image: linear-gradient(to bottom right,rgb(41, 221, 24),#07f54a,rgba(40, 130, 32, 0.891));
+      transform: rotate(20deg);
+    }
+}
+
+@keyframes blue {
+    50%{
+      background-position:right;
+      background-image: linear-gradient(to bottom right,rgb(11, 0, 213),#0466f8c4,rgba(4, 0, 255, 0.891));
+      transform: rotate(20deg);
+    }
+  
+}
+  
+@keyframes pink {
+    50%{
+      background-position:right;
+      background-image: linear-gradient(to bottom right,rgb(226, 15, 226),#dd00c452,rgb(255, 0, 212));
+      transform: rotate(20deg);
+    }
+}
